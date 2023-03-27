@@ -1,6 +1,9 @@
 #pragma once
 
 
+#include "ObjectPool.h"
+
+
 enum class BuffType
 {
 	USER,
@@ -23,6 +26,19 @@ class Buffer
 {
 public:
 
+public:
+	DWORD										_buffType;
+	DWORD										_buffFrom;
 private:
+
+	char*										_buffer;
+	int											_bufferLength;
+
+	int											_bufferRealSize;
+	int											_currentPosition;
+
+	bool										_isAttached;
+
+	static ObjectPool<Buffer*>					_bufferPool;
 
 };

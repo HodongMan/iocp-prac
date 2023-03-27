@@ -26,6 +26,9 @@
     <ClCompile Include="Thread.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="ObjectPool.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -38,6 +41,9 @@
       <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="Thread.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectPool.h">
       <Filter>Header</Filter>
     </ClInclude>
   </ItemGroup>

@@ -131,11 +131,13 @@
     <ClCompile Include="IOCPPrac.cpp" />
     <ClCompile Include="Locker.cpp" />
     <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="ObjectPool.cpp" />
     <ClCompile Include="Thread.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Buffer.h" />
     <ClInclude Include="Logger.h" />
+    <ClInclude Include="ObjectPool.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Thread.h" />
   </ItemGroup>
