@@ -128,15 +128,27 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Buffer.cpp" />
+    <ClCompile Include="ClientConnection.cpp" />
+    <ClCompile Include="INetworkStreamObject.cpp" />
     <ClCompile Include="IOCPPrac.cpp" />
     <ClCompile Include="Locker.cpp" />
     <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="MemoryPool.cpp" />
+    <ClCompile Include="NetworkBase.cpp" />
+    <ClCompile Include="NetworkStream.cpp" />
     <ClCompile Include="ObjectPool.cpp" />
     <ClCompile Include="Thread.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Buffer.h" />
+    <ClInclude Include="ClientConnection.h" />
+    <ClInclude Include="INetworkStreamObject.h" />
     <ClInclude Include="Logger.h" />
+    <ClInclude Include="MemoryPool.h" />
+    <ClInclude Include="NetworkBase.h" />
+    <ClInclude Include="NetworkMessage.h" />
+    <ClInclude Include="NetworkMessageBase.h" />
+    <ClInclude Include="NetworkStream.h" />
     <ClInclude Include="ObjectPool.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Thread.h" />

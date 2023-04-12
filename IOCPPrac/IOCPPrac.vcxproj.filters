@@ -29,6 +29,21 @@
     <ClCompile Include="ObjectPool.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="INetworkStreamObject.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="MemoryPool.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkBase.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="NetworkStream.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientConnection.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -44,6 +59,27 @@
       <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="ObjectPool.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="INetworkStreamObject.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="MemoryPool.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkBase.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkMessageBase.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkMessage.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientConnection.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkStream.h">
       <Filter>Header</Filter>
     </ClInclude>
   </ItemGroup>
