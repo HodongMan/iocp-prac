@@ -44,6 +44,15 @@
     <ClCompile Include="ClientConnection.cpp">
       <Filter>Source</Filter>
     </ClCompile>
+    <ClCompile Include="NetworkObjectPool.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="IOData.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="BackupLinkerThread.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -80,6 +89,15 @@
       <Filter>Header</Filter>
     </ClInclude>
     <ClInclude Include="NetworkStream.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="NetworkObjectPool.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="IOData.h">
+      <Filter>Header</Filter>
+    </ClInclude>
+    <ClInclude Include="BackupLinkerThread.h">
       <Filter>Header</Filter>
     </ClInclude>
   </ItemGroup>
