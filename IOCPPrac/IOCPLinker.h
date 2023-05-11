@@ -38,7 +38,6 @@ public:
 	virtual void							onErrorMessage( void ) noexcept override;
 	virtual void							onHTTPRequest( const char* message, const int messageLength ) noexcept override;
 	virtual void							printLogInfo( const char* info, bool isViewInWindow = false ) noexcept override;
-	virtual void							sendAppThreadMessage( BYTE byteMessageType, const char* message = nullptr, const int messageLength = 0 ) noexcept override;
 	virtual DWORD							getID( void ) const noexcept override;
 	virtual AddressInfo						getAddressInfo( void ) const noexcept override;
 
@@ -52,6 +51,10 @@ public:
 	void									realSendMessage( void ) noexcept;
 
 	ConnectStatus							getConnectStatus( void ) const noexcept;
+	void									setConnectStatus( const ConnectStatus connectStatus ) noexcept;
+
+	ULONG64									getDestroyTick( void ) const noexcept;
+	void									setDestroyTick( const ULONG64 ullTick ) noexcept;
 
 public:
 

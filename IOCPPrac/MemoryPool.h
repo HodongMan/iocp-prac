@@ -29,6 +29,29 @@ struct MemoryChunk
 class MemoryPool
 {
 public:
+	MemoryPool( void ) noexcept;
+	~MemoryPool( void ) noexcept;
+
+public:
+
+	MemoryPool*									getInstance( void ) noexcept;
+
+
+	bool										startPool( const ULONG64 ullIncrementSize = 67108864 ) noexcept;
+	char*										getMemory( ULONG64 ullSize ) noexcept;
+	bool										backMemory( char** memory ) noexcept;
+
+	ULONG64										getAllSize( void ) const noexcept;
+	ULONG64										getNoUseSize( void ) const noexcept;
+	void										clear( void ) noexcept;
+
+private:
+	bool										addMemoryPool( void ) noexcept;
+	ULONG64										alignNumForMinSize( ULONG64& ullIn ) noexcept;
+
+	char*										realPopMemory( ULONG64 ullSize ) noexcept;
+	void										insertChunkToFree( MemoryChunk* insertChunk ) noexcept;
+	void										removeFreeChunk( MemoryChunk* removeChunk ) noexcept;
 
 private:
 
@@ -38,7 +61,7 @@ private:
 	std::unordered_map<ULONG64, MemoryChunk*>	_chunkMap;
 	ObjectPool<MemoryChunk>						_poolChunk;
 
-	ULONG										_incrementSize;
+	ULONG64										_incrementSize;
 
 	Locker										_locker;
 };
